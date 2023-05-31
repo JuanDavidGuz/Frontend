@@ -5,7 +5,7 @@ export const register = (name, email, password) => {
   return async (dispatch, getState) => {
     dispatch(startLoading());
 
-    const response = await axios.post(`http://localhost:3000/api/auth/new`, {
+    const response = await axios.post(`https://backend-4ffu.onrender.com/api/auth/new`, {
       name,
       email,
       password,
@@ -18,7 +18,7 @@ export const loginIn = (email, password) => {
   return async (dispatch, getState) => {
     dispatch(startLoading());
 
-    const response = await axios.post(`http://localhost:3000/api/auth/`, {
+    const response = await axios.post(`https://backend-4ffu.onrender.com/api/auth/`, {
       email,
       password,
     });
