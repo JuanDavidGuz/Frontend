@@ -5,7 +5,7 @@ import { AuthContext } from './context/AuthContext';
 import { Navbar } from './Components/Shared/Navbar';
 import { Provider } from 'react-redux';
 import { store } from './Store/store';
-import { Modal } from './Components/modal';
+import { Modal } from './Components/Modal';
 import { useState } from 'react';
 
 const App=()=> {
